@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const tasks = require('./routes/tasksRoutes');
 const port = 3000;  
 
 
@@ -8,6 +9,8 @@ const port = 3000;
 app.get('/', (req, res) => {
     res.send('Task Manager App');
 });
+
+app.use('/api/v1/tasks', tasks    );
 
 // getAllTasks app.get('/api/v1/tasks')
 // getById app.get('/api/v1/tasks/:id')
