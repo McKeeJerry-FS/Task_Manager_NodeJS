@@ -1,0 +1,1 @@
+const connectionstring = 'mongodb+srv://jerry:Momiji24@nodeexpressproject.zcpi5.mongodb.net/?retryWrites=true&w=majority&appName=NodeExpressProject';
